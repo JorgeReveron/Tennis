@@ -1,0 +1,25 @@
+{
+  "name": "tennis",
+  "version": "1.0.0",
+  "description": "clases para un partido de tenis",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeReveron/Tennis.git"
+  },
+  "keywords": [
+    "prueba"
+  ],
+  "author": "Jorge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeReveron/Tennis/issues"
+  },
+  "homepage": "https://github.com/JorgeReveron/Tennis#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
