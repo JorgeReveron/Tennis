@@ -5,5 +5,8 @@ class Player{
         this.name = name;
     }
 }
-let player1 = new Player("Juan");
-console.log(player1);
+
+module.exports = Player;
+
+//let player1 = new Player("Juan");
+//console.log(player1);
