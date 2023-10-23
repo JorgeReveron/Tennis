@@ -3,7 +3,7 @@ const Player = require("./Player");
 test("crear jugador", () =>{
     const jugador1 = new Player("Pepe");
     expect(jugador1.name).toBe("Pepe");
-    expect(jugador1).toEqual({ name: "Pepe"});
+    expect(jugador1).toEqual({ name: "Pepe",ranking: 0});
 });
 
 test("Crear jugador con ranking", ()=>{
@@ -12,4 +12,28 @@ test("Crear jugador con ranking", ()=>{
     jugador1.ranking = 9;
     expect(jugador1.ranking).toBe(9);
     expect(jugador1).toEqual({ranking: 9, name: "Pepe"});
+});
+
+test("crear jugador male", () =>{
+    const jugador1 = new Player("Pepe",5 , "male");
+    expect(jugador1.name).toBe("Pepe");
+    expect(jugador1.gender).toBe("male");
+});
+
+test("crear jugador female", () =>{
+    const jugador1 = new Player("Ana",3, "female");
+    expect(jugador1.name).toBe("Ana");
+    expect(jugador1.gender).toBe("female");
+});
+
+test("crear jugador female sin indicar genero", () =>{
+    const jugador1 = new Player("Ana");
+    expect(jugador1.name).toBe("Ana");
+    expect(jugador1.gender).toBe("female");
+});
+
+test("crear jugador female por poner un genero extraño", () =>{
+    const jugador1 = new Player("Ana",2, "kkfu");
+    expect(jugador1.name).toBe("Ana");
+    expect(jugador1.gender).toBe("female");
 });
